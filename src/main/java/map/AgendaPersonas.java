@@ -40,6 +40,7 @@ public class AgendaPersonas {
         for (String key : agenda.keySet()) {
             System.out.printf("Clave %s -- Objeto %s %n", key, agenda.get(key));
         }
+        System.out.println("-------------------------------------------------------------------------");
 
         // Las claves no tienen por qué coincidir con algún atributo del objeto
         agenda.put("11111111A", new Persona("12345678C", "Julia", "Hernández", LocalDate.of(1990, 12, 15)));

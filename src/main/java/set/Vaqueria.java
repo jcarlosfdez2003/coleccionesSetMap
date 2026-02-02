@@ -69,12 +69,13 @@ public class Vaqueria {
     }
 
     public static boolean saberSiEstaLaVaca(Set<Vaca> conjuntoDeVacas, int ID){
-        for (Vaca v : conjuntoDeVacas) {
-            if (v.getId() == ID) {
-                return true;
-            }
-        }
-        return false;
+        //for (Vaca v : conjuntoDeVacas) {
+        //    if (v.getId() == ID) {
+        //        return true;
+        //    }
+        //}
+        return conjuntoDeVacas.contains(ID);    
+        //return false;
     }
 
 }
