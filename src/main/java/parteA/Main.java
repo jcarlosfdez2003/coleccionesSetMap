@@ -1,5 +1,6 @@
 package parteA;
 
+import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -45,11 +46,14 @@ public class Main {
                         t1.guardarTraduccion(p1, p2);
                         break;
                     case 2:
-                        System.out.println("Vemos traducciones.");
+                        System.out.println("Vemos las traducciones.");
                         t1.imprimir();
                         break;
                     case 3:
+                        System.out.println("Introduce la palabra que desea traducir: ");
+                        String palabraIngles = sc.next();
                         System.out.println("Traducimos palabra.");
+                        t1.obtenerTraduccion(palabraIngles);
                         break;
                     case 4:
                         System.out.println("Eliminamos traducción");
@@ -62,9 +66,11 @@ public class Main {
                         break;
                     case 6:
                         System.out.println("Obtenemos lista de palabras en español.");
+                        System.out.println(t1.obtenerListaValores());
                         break;
                     case 7:
                         System.out.println("Obtenemos lista de palabras en ingles.");
+                        t1.obtenerListaPalabrasExtranjeras();
                         break;
 
                     default:
@@ -79,5 +85,7 @@ public class Main {
 
         } while (!salir);
     }
+
+    
 
 }

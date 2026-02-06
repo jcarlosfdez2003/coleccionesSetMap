@@ -50,4 +50,15 @@ public class TuLotero {
         }
     }
 
+    @Override
+    public String toString(){
+        String aux = "";
+        for (Map.Entry<String,String> entrada : boletosPremiados.entrySet()) {
+            String key = entrada.getKey();
+            String value = entrada.getValue();
+            aux += key + "----------------" + value + "\n";
+        }
+        return aux;
+    }
+
 }

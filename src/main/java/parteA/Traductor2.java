@@ -48,4 +48,13 @@ public class Traductor2 {
         return new ArrayList<>(palabras.values());
     }
 
+    public ArrayList<String> obtenerListaPalabrasExtranjeras(){
+        return new ArrayList<>(palabras.keySet());
+    }
+
+    public void obtenerTraduccion(String palabraIngles){
+        System.out.println("La palabra: " + palabraIngles + " es " + palabras.get(palabraIngles));
+    }
+
+
 }
